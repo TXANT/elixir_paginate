@@ -31,7 +31,7 @@ At the view page, you need to add below codes. Put your controller at the place 
 <%= stylesheet_link_tag 'pagination' %>
 
 
-# to show the page numbers 
+<!-- to show the page numbers -->
 <div class="pagination">
     <!-- パージ番号を表示 -->
     <ul>
