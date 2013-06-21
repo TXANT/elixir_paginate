@@ -37,17 +37,17 @@ At the view page, you need to add below codes. Put your controller at the place 
     <ul>
         <% if @next > 2 %>
         <li>
-            <%= link_to '<<', :controller => 'book', :page => @next-2, :author => params[:author] %>
+            <%= link_to '<<', :controller => 'your_controller', :page => @next-2, :author => params[:author] %>
         </li>
         <% end %>
         <% for i in 1..@var[0] %>
         <li>
-            <%= link_to i, :controller => 'book', :page => i, :author => params[:author] %><% end %>
+            <%= link_to i, :controller => 'your_controller', :page => i, :author => params[:author] %><% end %>
         </li>
         <% end %>
         <% if @next < @var[0]+1 %>
         <li>
-            <%= link_to '>>', :controller => 'book', :page => @next, :author => params[:author] %>
+            <%= link_to '>>', :controller => 'your_controller', :page => @next, :author => params[:author] %>
         </li>
         <% end %>
     </ul>
